@@ -47,7 +47,7 @@ class App extends Component {
         <div className="App">
           <div className="container">
             <Header />
-            <Route exact path="/" render={ () => (
+            <Route basename="/" render={ () => (
             <React.Fragment>
               <AddTodo addTodo={this.addTodo} />
               <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo} />
