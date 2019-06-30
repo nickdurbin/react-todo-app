@@ -29,7 +29,7 @@ class App extends Component {
   // Delte Todo
   delTodo = (id) => {
     axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
-      .then(res => this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] }));
+      .then(_res => this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] }));
   }
 
   // Adds Todo
