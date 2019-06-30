@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import App from './App';
+import BrowserRouter from 'react-router-dom/BrowserRouter'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((<BrowserRouter basename={process.env.PUBLIC_URL}>
+  <App />
+  </BrowserRouter>, document.getElementById('root')));
 
