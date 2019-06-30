@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-bo;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -17,9 +17,10 @@ a {
 
 .container {
   padding: 0 1rem;
+  margin: 20px 0;
 }
 
-.btn {
+input.btn {
   display: inline-block;
   border: none;
   background: #555;
@@ -28,7 +29,7 @@ a {
   cursor: pointer;
 }
 
-.btn:hover {
+input.btn:hover {
   background: #666;
   transform: scale(1.04);
 }
